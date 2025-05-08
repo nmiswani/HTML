@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Area of Rectangle</title>
+    <style>
+        table {
+            border: 1px solid black;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+        td {
+            padding: 4px 8px;
+        }
+        .title {
+            font-weight: bold;
+            text-align: center;
+            font-size: 16px;
+        }
+        .label {
+            text-align: left;
+            width: 80px;
+        }
+        .colon {
+            width: 10px;
+            text-align: center;
+        }
+        .value {
+            text-align: left;
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var length = 2;
+        var width = 4;
+        var area = length * width;
+    </script>
+
+    <table>
+        <tr>
+            <td colspan="3" class="title">AREA OF RECTANGLE</td>
+        </tr>
+        <tr>
+            <td class="label">Length</td>
+            <td class="colon">:</td>
+            <td class="value"><script>document.write(length);</script></td>
+        </tr>
+        <tr>
+            <td class="label">Width</td>
+            <td class="colon">:</td>
+            <td class="value"><script>document.write(width);</script></td>
+        </tr>
+        <tr>
+            <td class="label">Total</td>
+            <td class="colon">:</td>
+            <td class="value"><script>document.write(area);</script></td>
+        </tr>
+    </table>
+</body>
+</html>

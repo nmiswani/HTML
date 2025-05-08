@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Flight Schedule</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 1px;
+        }
+        th {
+            background-color: lightblue;
+            text-align: start;
+        }
+        td {
+            background-color: lightgray;
+            text-align: start;
+        }
+        /* Flight number column blue */
+        .flight-number {
+            background-color: lightblue;
+            font-weight: bold;
+        }
+        /* Cells for BA 1254 */
+        .dark {
+            background-color: grey;
+            text-align: end;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flight Schedule</h1>
+    <table>
+        <tr>
+            <th>Flight Number:</th>
+            <th>From:</th>
+            <th>To:</th>
+            <th>Departure:</th>
+            <th>Arrival:</th>
+        </tr>
+        <tr>
+            <td class="flight-number">BA 3451</td>
+            <td>Heathrow</td>
+            <td>Nuremberg</td>
+            <td>19:20</td>
+            <td>19:50</td>
+        </tr>
+        <tr>
+            <td class="flight-number">BA 1254</td>
+            <td class="dark">Luton</td>
+            <td class="dark">Alicante</td>
+            <td class="dark">19:40</td>
+            <td class="dark">20:50</td>
+        </tr>
+        <tr>
+            <td class="flight-number">LH 331</td>
+            <td>Heathrow</td>
+            <td>Hamburg</td>
+            <td>20:00</td>
+            <td>20:20</td>
+        </tr>
+    </table>
+</body>
+</html>

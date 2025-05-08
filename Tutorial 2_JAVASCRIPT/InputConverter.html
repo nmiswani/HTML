@@ -1,0 +1,18 @@
+<body>
+<script>
+    var quantity, total;
+    quantity = parseFloat(prompt("Enter Quantity (RM2.55/pcs):"));
+    total = quantity * 2.55;
+</script>
+
+<table border="1">
+    <tr>
+        <td>Quantity</td>
+        <td><script>document.write(quantity);</script></td>
+    </tr>
+    <tr>
+        <td>Total Price</td>
+        <td><script>document.write(total.toFixed(2));</script></td>
+    </tr>
+</table>
+</body>

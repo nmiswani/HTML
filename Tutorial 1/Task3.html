@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Biology Project and Timetable</title>
+    <style>
+        .biology-container {
+            max-width: 270px;
+        }
+        .timetable-container {
+            max-width: 400px;
+        }
+        .table-title {
+            text-align: center;
+        }
+        .start-align {
+            text-align: start;
+        }
+        .day {
+            background-color: lightblue;
+            font-weight: bold;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 1px;
+            text-align: center;
+        }
+        th {
+            font-weight: bold;
+        }
+        /* Biology project table */
+        #biology {
+            background-color: yellow;
+            border-collapse: separate;
+            border: 1px solid black;
+        }
+        #biology-table th,
+        #biology-table td {
+            background-color: yellow;
+        }
+        /* Timetable table */
+        #timetable {
+            border-collapse: collapse;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="biology-container">
+        <div class="table-title">My Biology Project</div>
+        <table id="biology">
+            <tr>
+                <th>Day 3</th>
+                <th>Meadow</th>
+                <th>Verge</th>
+                <th>Woodland</th>
+            </tr>
+            <tr>
+                <td><b>Daisies</b></td>
+                <td class="start-align">22</td>
+                <td class="start-align" rowspan="2" colspan="2">16</td>
+            </tr>
+            <tr>
+                <td><b>Buttercups</b></td>
+                <td class="start-align">19</td>
+            </tr>
+            <tr>
+                <td><b>Nettles</b></td>
+                <td class="start-align">8</td>
+                <td class="start-align">2</td>
+                <td class="start-align">4</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <div class="timetable-container">
+        <div class="table-title">My Timetable</div>
+        <table id="timetable">
+            <tr>
+                <th class="day"></th>
+                <th class="day">Friday</th>
+                <th class="day">Saturday</th>
+                <th class="day">Sunday</th>
+            </tr>
+            <tr>
+                <td>8:00 a.m. - 9:00 a.m.</td>
+                <td colspan="3">Breakfast</td>
+            </tr>
+            <tr>
+                <td>9:00 a.m. - 11:00 a.m.</td>
+                <td colspan="2">Swimming</td>
+                <td>Tennis</td>
+            </tr>
+            <tr>
+                <td>12:00 p.m. - 1:00 p.m.</td>
+                <td colspan="3">Lunch</td>
+            </tr>
+            <tr>
+                <td>2:00 p.m. - 4:00 p.m.</td>
+                <td>Cinema</td>
+                <td>Zoo</td>
+                <td>Cinema</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
