@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Syazwani Mz. Portfolio</title>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" href="images/icon.jpg" type="image/png" />
+</head>
+
+<i class="ph-bold ph-arrow-bend-left-top"></i>
+<a href="#" class="scroll-btn" id="scrollTopBtn" title="Go to top">
+<i class="ph-bold ph-arrow-bend-left-up"></i>Scroll top</a>
+
+<body>
+  <header>
+  <a href="#home" class="logo">Syazwani Mz.</a>
+  <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+  <ul class="navmenu" id="navmenu">
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#lifestyle">Lifestyle</a></li>
+    <li><a href="#galleries">Galleries</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</header>
+
+<section class="home" id="home">
+  <div class="home-text">
+    <h2>Hi, I'm Syazwani</h2>
+    <h3>Software Engineering Student</h3>
+    <p>Welcome to my e-portfolio! I am passionate about web & mobile development, and always open to learning new tech that solves real problems.</p>
+    <div class="home-btn">
+      <a href="#contact" class="btn">Contact Me</a>
+      <a href="resume/resume_syazwani.pdf" class="btn" download>View Resume</a>
+    </div>
+  </div>
+  <div class="home-img">
+    <img src="images/main_profile.png" alt="Profile Image" />
+  </div>
+</section>
+
+<div class="socials-icons">
+  <a href="https://www.instagram.com/nsyazmuzakir?igsh=MnN6Zm9hYzlrbm12&utm_source=qr" target="_blank"><i class="ph-bold ph-instagram-logo"></i></a>
+  <a href="http://linkedin.com/in/syazwani-muzakir-4a217b353" target="_blank"><i class="ph-bold ph-linkedin-logo"></i></a>
+  <a href="https://github.com/nmiswani?tab=repositories" target="_blank"><i class="ph-bold ph-github-logo"></i></a>
+</div>
+
+<section class="about" id="about">
+  <div class="container about-section">
+    <div class="about-content">
+      <div class="about-img">
+        <img src="images/about.jpg" alt="Profile Image">
+      </div>
+
+      <div class="about-info">
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>Hi, I am <b>Nur Syazwani</b>, a Software Engineering student passionate about turning complex problems into simple, user-friendly apps. I specialize in mobile and web development using Flutter, PHP, MySQL, and several other programming languages. I enjoy collaborating with diverse teams to create innovative and effective solutions that truly make a difference in people's lives.</p><br>
+          <p>I am currently pursuing my degree in BSc. IT at <b>Universiti Utara Malaysia (UUM)</b> and hold a Diploma in IT from Politeknik Ungku Omar. My goal is to become a versatile developer who not only builds great apps but also continuously learns, adapts, and grows in this fast-evolving tech world. Beyond coding, I channel my creativity through blogging, travel journaling, and visual storytelling, which inspire me to think differently and bring fresh, unique ideas to my projects.</p>
+        </div>
+
+        <div class="my-skills">
+          <h3 class="skills-title">My Skills</h3>
+          <div class="skills-grid">
+            <div class="skill-bar">
+              <p>Flutter</p>
+              <div class="bar">
+                <div class="progress progress-1" style="width: 85%;">85%</div>
+              </div>
+            </div>
+            <div class="skill-bar">
+              <p>PHP & MySQL</p>
+              <div class="bar">
+                <div class="progress progress-2" style="width: 80%;">80%</div>
+              </div>
+            </div>
+            <div class="skill-bar">
+              <p>Java</p>
+              <div class="bar">
+                <div class="progress progress-3" style="width: 75%;">75%</div>
+              </div>
+            </div>
+            <div class="skill-bar">
+              <p>HTML & CSS</p>
+              <div class="bar">
+                <div class="progress progress-4" style="width: 90%;">90%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="portfolio" id="projects">
+  <div class="container">
+    <div class="section-header text-center">
+      <p>My Projects</p>
+      <h2>Some of My Work</h2>
+    </div>
+
+    <div class="project-filters">
+      <button class="filter-button filter-active" data-filter="all">All</button>
+      <button class="filter-button" data-filter="mobile">Mobile Apps</button>
+      <button class="filter-button" data-filter="web">Web Design</button>
+    </div>
+
+    <div class="portfolio-grid">
+      <div class="portfolio-item mobile">
+        <div class="portfolio-img">
+          <img src="images/projects/pomm.png" alt="POMM App">
+          <div class="overlay-hover">
+            <a href="javascript:void(0)" class="btn" onclick="openModal('modal-pomm')">View Details</a>
+          </div>
+        </div>
+        <h4 class="project-title">POMM App</h4>
+      </div>
+
+      <div class="portfolio-item mobile">
+        <div class="portfolio-img">
+          <img src="images/projects/bookbytes.png" alt="BookBytes App">
+          <div class="overlay-hover">
+            <a href="javascript:void(0)" class="btn" onclick="openModal('modal-bookbytes')">View Details</a>
+          </div>
+        </div>
+        <h4 class="project-title">BookBytes App</h4>
+      </div>
+
+      <div class="portfolio-item mobile">
+        <div class="portfolio-img">
+          <img src="images/projects/wellfitness.png" alt="Well Fitness App">
+          <div class="overlay-hover">
+            <a href="javascript:void(0)" class="btn" onclick="openModal('modal-wellfitness')">View Details</a>
+          </div>
+        </div>
+        <h4 class="project-title">Well Fitness & Gymnasium App</h4>
+      </div>
+
+      <div class="portfolio-item web">
+        <div class="portfolio-img">
+          <img src="images/projects/web_watches.JPG" alt="Watches Web">
+          <div class="overlay-hover">
+            <a href="javascript:void(0)" class="btn" onclick="openModal('modal-watches')">View Details</a>
+          </div>
+        </div>
+        <h4 class="project-title">Watches Website</h4>
+      </div>
+    </div>
+
+    <div class="project-reflection">
+      <h4>Project Reflection</h4>
+      <p>This project taught me how to handle real client feedback and solve backend challenges under tight deadlines, improving my problem-solving and teamwork skills.</p>
+    </div>
+  </div>
+</section>
+
+<div id="modal-pomm" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal-pomm')">&times;</span>
+    <h3>Purchase Order Monitoring Mobile App</h3>
+    <p><strong>Technology:</strong> Flutter, PHP, MySQL</p>
+    <p><strong>Description:</strong> A mobile system to monitor gadget store orders in real-time. It includes customer ordering, admin dashboard, product tracking, and daily sales reports.</p>
+    <ul>
+      <li>Real-time inventory management</li>
+      <li>Admin order status updates</li>
+      <li>Daily, monthly, yearly sales report</li>
+      <li>Flutter frontend with PHP backend</li>
+    </ul>
+  </div>
+</div>
+
+<div id="modal-bookbytes" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal-bookbytes')">&times;</span>
+    <h3>BookBytes App – Online Bookstore</h3>
+    <p><strong>Technology:</strong> Flutter, PHP, MySQL, Billplz API</p>
+    <p><strong>Description:</strong> A cross-platform mobile app for browsing and purchasing books with online payment integration.</p>
+    <ul>
+      <li>Secure Billplz payment integration</li>
+      <li>Inventory and transaction database</li>
+      <li>User-friendly book browsing</li>
+    </ul>
+  </div>
+</div>
+
+<div id="modal-wellfitness" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal-wellfitness')">&times;</span>
+    <h3>Well Fitness & Gymnasium App</h3>
+    <p><strong>Technology:</strong> Java, Firebase</p>
+    <p><strong>Description:</strong> Application for gym slot booking and admin reporting.</p>
+    <ul>
+      <li>Real-time slot updates</li>
+      <li>Firebase backend</li>
+      <li>Admin reporting dashboard</li>
+    </ul>
+  </div>
+</div>
+
+<div id="modal-watches" class="modal" style="display: none;">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal-watches')">&times;</span>
+    <h3>Watches Website</h3>
+    <p><strong>Technology:</strong> HTML, CSS, JavaScript</p>
+    <p><strong>Description:</strong> A responsive website for showcasing modern watch collections with promotional highlights.</p>
+    <ul>
+      <li>Interactive product display with hover effects</li>
+      <li>Sales announcement banners</li>
+      <li>User-friendly navigation with smooth scrolling</li>
+    </ul>
+  </div>
+</div>
+
+<section class="timeline-section" id="experience">
+  <div class="container">
+    <div class="section-title text-center">
+      <h2>Work Experience</h2>
+      <p>A glimpse into the professional roles and responsibilities I've taken on.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item left">
+        <div class="timeline-icon"><i class="ph ph-briefcase"></i></div>
+        <div class="timeline-content">
+          <span class="timeline-date">Sep 2021 - Feb 2022</span>
+          <h3>IT Technician Intern - JKR Sabak Bernam</h3>
+          <p>Supported hardware maintenance, basic troubleshooting, and system testing. Assisted with network setup and documented technical procedures for internal use.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item right">
+        <div class="timeline-icon"><i class="ph ph-desktop-tower"></i></div>
+        <div class="timeline-content">
+          <span class="timeline-date">May 2022 - Sep 2022</span>
+          <h3>Sales Assistant - MG Millionaire Global</h3>
+          <p>Assisted customers, handled online orders, and helped maintain daily sales. Improved communication and product recommendation skills while supporting inventory and packing tasks.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="lifestyle-hero" id="lifestyle">
+  <div class="container">
+    <h2>Welcome to My Lifestyle</h2>
+    <p>Exploring food, travel, and life balance. Join me on this personal journey to discover joy in every moment!</p>
+  </div>
+</section>
+
+<section class="lifestyle-section food-section" id="lifestyle">
+  <div class="container">
+    <h3><i class="fas fa-utensils"></i> Food Adventures</h3>
+    <div class="grid food-grid">
+
+      <div class="card food-card">
+        <img src="images/lifestyle/food_1.jpg" alt="Homemade Satay">
+        <h4>Homemade Satay</h4>
+        <p>Ingredients: chicken, skewers, oil, and marinade. The aroma is truly appetizing!</p>
+      </div>
+
+      <div class="card food-card">
+        <img src="images/lifestyle/food_2.jpg" alt="Cream Puff">
+        <h4>Restaurant Review:<br>The Ordinary Baker</h4>
+        <p>The cream puffs are delicious! Totally worth it with many exciting flavors.</p>
+      </div>
+
+      <div class="card food-card">
+        <img src="images/lifestyle/food_3.jpg" alt="Spaghetti & Grilled Chicken">
+        <h4>Spaghetti & Grilled Chicken</h4>
+        <p>Create sweet memories with friends — cook together and enjoy the results!</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="lifestyle-section travel-section" id="lifestyle">
+  <div class="container">
+  <h3><i class="fas fa-plane-departure"></i> Travel Section</h3>
+    <div class="travel-grid">
+
+      <div class="travel-card">
+        <h5 class="card-label">Destinations</h5>
+        <div class="carousel" id="destination-carousel">
+          <img class="carousel-img active" src="images/lifestyle/makkah.jpg" alt="Umrah">
+          <img class="carousel-img" src="images/lifestyle/turkey.jpg" alt="Turkey">
+          <img class="carousel-img" src="images/lifestyle/sydney.jpg" alt="Sydney">
+          <button class="carousel-btn left" onclick="changeSlide('destination', -1)">&#10094;</button>
+          <button class="carousel-btn right" onclick="changeSlide('destination', 1)">&#10095;</button>
+        </div>
+        <h4 id="destination-title">Makkah Madinah</h4>
+        <p id="destination-desc">A spiritual journey to Makkah and Madinah. Perfect for those seeking peace, reflection, and religious fulfillment.</p>
+      </div>
+
+      <div class="travel-card">
+        <h5 class="card-label">Travel Tips</h5>
+        <div class="carousel" id="tip-carousel">
+          <img class="carousel-img" src="images/lifestyle/passport.jpg" alt="Bring Passport">
+          <img class="carousel-img active" src="images/lifestyle/weather.jpg" alt="Pack Accordingly">
+          <img class="carousel-img" src="images/lifestyle/flightmeal.jpg" alt="Eat on Plane">
+          <button class="carousel-btn left" onclick="changeSlide('tip', -1)">&#10094;</button>
+          <button class="carousel-btn right" onclick="changeSlide('tip', 1)">&#10095;</button>
+        </div>
+        <h4 id="tip-title">Bring Your Passport</h4>
+        <p id="tip-desc">Keep your passport safe and carry it when heading to the airport. Consider using a passport holder for extra protection.</p>
+      </div>
+
+      <div class="travel-card">
+        <h5 class="card-label">Stories</h5>
+        <div class="carousel" id="exp-carousel">
+          <img class="carousel-img active" src="images/lifestyle/nasiunta.jpg" alt="Camel Rice">
+          <img class="carousel-img" src="images/lifestyle/safari.jpg" alt="Jeep Safari">
+          <img class="carousel-img" src="images/lifestyle/gojek.jpg" alt="Gojek Ride">
+          <img class="carousel-img" src="images/lifestyle/bondi.jpg" alt="Bondi Beach">
+          <button class="carousel-btn left" onclick="changeSlide('exp', -1)">&#10094;</button>
+          <button class="carousel-btn right" onclick="changeSlide('exp', 1)">&#10095;</button>
+        </div>
+        <h4 id="exp-title">Tasting Camel Rice</h4>
+        <p id="exp-desc">Enjoyed a unique cultural dish during our local experience – flavorful and memorable! A must-try for food lovers.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="lifestyle-section balance-section" id="lifestyle">
+  <div class="container">
+    <h3><i class="fas fa-balance-scale"></i> Work-Life Balance Tips</h3>
+
+    <div class="tips-card">
+      <ul class="tips-list">
+        <li>Set clear boundaries between work and personal time to avoid burnout and maintain a healthy routine.</li>
+        <li>Plan your day using planners or apps to stay organized and focused on your priorities.</li>
+        <li>Stay active with simple activities like walking or stretching to boost your physical and mental well-being.</li>
+        <li>Practice mindfulness daily through breathing exercises or reflection to reduce stress and improve clarity.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="poll-button-container">
+  <button id="showPollBtn" class="btn">Wait! Do you want to join Quick Poll?</button>
+</div>
+
+<section class="poll-section" id="pollSection" style="display: none;">
+  <button id="closePollBtn" class="btn-close">✕</button>
+  <h3>Quick Poll</h3>
+  <p>Which lifestyle content do you enjoy the most?</p>
+  <form id="pollForm">
+    <label><input type="radio" name="poll" value="Food"> Food</label><br>
+    <label><input type="radio" name="poll" value="Travel"> Travel</label><br>
+    <label><input type="radio" name="poll" value="Tips"> Work-Life Tips</label><br>
+    <label><input type="radio" name="poll" value="All"> All of them!</label><br>
+    <button type="submit">Vote</button>
+  </form>
+  <div id="pollResult" style="margin-top:10px;"></div>
+</section>
+
+<section class="galleries-masonry" id="galleries">
+  <div class="container">
+    <h2 class="section-title">My Galleries</h2>
+    <p class="subtitle">Snapshots of projects, events, and moments.</p>
+
+    <div class="masonry-grid">
+      <div class="masonry-item tall">
+        <img src="images/galleries/sukabumi.jpg" alt="Mobility Program" />
+        <h4>Mobility Program - Indonesia</h4>
+      </div>
+
+      <div class="masonry-item">
+        <img src="images/galleries/sukabumi_2.jpg" alt="Javanese Food" />
+        <h4>Javanese Food</h4>
+      </div>
+
+      <div class="masonry-item wide">
+        <iframe src="https://youtube.com/embed/QIgruHOl3Oc?si=JH9YIlXaeJkUXdaB" frameborder="0" allowfullscreen></iframe>
+        <h4>Makkah Trip</h4>
+      </div>
+
+      <div class="masonry-item">
+        <img src="images/galleries/businesstalk.jpg" alt="Business Talk" />
+        <h4>Business Talk Program</h4>
+      </div>
+
+      <div class="masonry-item">
+        <img src="images/galleries/puo.jpg" alt="Residential College" />
+        <h4>College Committee</h4>
+      </div>
+
+      <div class="masonry-item">
+        <img src="images/galleries/funrun.jpg" alt="Fun run" />
+        <h4>Color of Freedom</h4>
+      </div>
+
+      <div class="masonry-item">
+        <img src="images/galleries/graduate.jpg" alt="Graduate" />
+        <h4>Diploma Done!</h4>
+      </div>
+
+      <div class="masonry-item">
+        <img src="images/galleries/sukabumi_1.jpg" alt="SOC" />
+        <h4>SOC Hangout</h4>
+      </div>
+
+      <div class="masonry-item">
+        <img src="images/galleries/dekan.jpg" alt="Dekan" />
+        <h4>Dekan Ceremony</h4>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container">
+    <h2>Contact Me Here..</h2>
+      <form id="contactForm" onsubmit="return showModal()">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+
+      <div id="popupModal" class="popup-modal">
+        <div class="popup-content">
+        <p>Your message has been sent!</p>
+        <button onclick="closeModal()">OK</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Syazwani Mz. All rights reserved.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
