@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Responsive design -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Syazwani Mz. Portfolio</title>
+
+  <!-- External resources: Phosphor icons, FontAwesome, custom CSS, favicon -->
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="icon" href="images/icon.jpg" type="image/png" />
 </head>
 
+<!-- Floating button to scroll back to the top -->
 <i class="ph-bold ph-arrow-bend-left-top"></i>
 <a href="#" class="scroll-btn" id="scrollTopBtn" title="Go to top">
 <i class="ph-bold ph-arrow-bend-left-up"></i>Scroll top</a>
 
 <body>
-  <header>
+<header>
+  <!-- Logo and mobile menu toggle -->
   <a href="#home" class="logo">Syazwani Mz.</a>
   <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+
+  <!-- Main navigation menu -->
   <ul class="navmenu" id="navmenu">
     <li><a href="#home" class="active">Home</a></li>
     <li><a href="#about">About Me</a></li>
@@ -29,6 +36,7 @@
   </ul>
 </header>
 
+<!-- Home section -->
 <section class="home" id="home">
   <div class="home-text">
     <h2>Hi, I'm Syazwani</h2>
@@ -39,31 +47,33 @@
       <a href="resume/resume_syazwani.pdf" class="btn" download>View Resume</a>
     </div>
   </div>
+  <!-- Profile image -->
   <div class="home-img">
     <img src="images/main_profile.png" alt="Profile Image" />
   </div>
 </section>
 
+<!-- Social media links -->
 <div class="socials-icons">
   <a href="https://www.instagram.com/nsyazmuzakir?igsh=MnN6Zm9hYzlrbm12&utm_source=qr" target="_blank"><i class="ph-bold ph-instagram-logo"></i></a>
   <a href="http://linkedin.com/in/syazwani-muzakir-4a217b353" target="_blank"><i class="ph-bold ph-linkedin-logo"></i></a>
   <a href="https://github.com/nmiswani?tab=repositories" target="_blank"><i class="ph-bold ph-github-logo"></i></a>
 </div>
 
+<!-- About me section -->
 <section class="about" id="about">
   <div class="container about-section">
     <div class="about-content">
       <div class="about-img">
         <img src="images/about.jpg" alt="Profile Image">
       </div>
-
       <div class="about-info">
         <div class="about-text">
           <h2>About Me</h2>
           <p>Hi, I am <b>Nur Syazwani</b>, a Software Engineering student passionate about turning complex problems into simple, user-friendly apps. I specialize in mobile and web development using Flutter, PHP, MySQL, and several other programming languages. I enjoy collaborating with diverse teams to create innovative and effective solutions that truly make a difference in people's lives.</p><br>
           <p>I am currently pursuing my degree in BSc. IT at <b>Universiti Utara Malaysia (UUM)</b> and hold a Diploma in IT from Politeknik Ungku Omar. My goal is to become a versatile developer who not only builds great apps but also continuously learns, adapts, and grows in this fast-evolving tech world. Beyond coding, I channel my creativity through blogging, travel journaling, and visual storytelling, which inspire me to think differently and bring fresh, unique ideas to my projects.</p>
         </div>
-
+        <!-- Skills bar -->
         <div class="my-skills">
           <h3 class="skills-title">My Skills</h3>
           <div class="skills-grid">
@@ -98,19 +108,20 @@
   </div>
 </section>
 
+<!-- Projects section -->
 <section class="portfolio" id="projects">
   <div class="container">
     <div class="section-header text-center">
       <p>My Projects</p>
       <h2>Some of My Work</h2>
     </div>
-
+    <!-- Filter buttons for project categories -->
     <div class="project-filters">
       <button class="filter-button filter-active" data-filter="all">All</button>
       <button class="filter-button" data-filter="mobile">Mobile Apps</button>
       <button class="filter-button" data-filter="web">Web Design</button>
     </div>
-
+    <!-- Project grid with modal triggers -->
     <div class="portfolio-grid">
       <div class="portfolio-item mobile">
         <div class="portfolio-img">
@@ -121,7 +132,6 @@
         </div>
         <h4 class="project-title">POMM App</h4>
       </div>
-
       <div class="portfolio-item mobile">
         <div class="portfolio-img">
           <img src="images/projects/bookbytes.png" alt="BookBytes App">
@@ -131,7 +141,6 @@
         </div>
         <h4 class="project-title">BookBytes App</h4>
       </div>
-
       <div class="portfolio-item mobile">
         <div class="portfolio-img">
           <img src="images/projects/wellfitness.png" alt="Well Fitness App">
@@ -141,7 +150,6 @@
         </div>
         <h4 class="project-title">Well Fitness & Gymnasium App</h4>
       </div>
-
       <div class="portfolio-item web">
         <div class="portfolio-img">
           <img src="images/projects/web_watches.JPG" alt="Watches Web">
@@ -152,14 +160,14 @@
         <h4 class="project-title">Watches Website</h4>
       </div>
     </div>
-
+    <!-- Project reflection -->
     <div class="project-reflection">
       <h4>Project Reflection</h4>
       <p>This project taught me how to handle real client feedback and solve backend challenges under tight deadlines, improving my problem-solving and teamwork skills.</p>
     </div>
   </div>
 </section>
-
+<!-- Modal popup for project details -->
 <div id="modal-pomm" class="modal">
   <div class="modal-content">
     <span class="close" onclick="closeModal('modal-pomm')">&times;</span>
@@ -174,7 +182,6 @@
     </ul>
   </div>
 </div>
-
 <div id="modal-bookbytes" class="modal">
   <div class="modal-content">
     <span class="close" onclick="closeModal('modal-bookbytes')">&times;</span>
@@ -188,7 +195,6 @@
     </ul>
   </div>
 </div>
-
 <div id="modal-wellfitness" class="modal">
   <div class="modal-content">
     <span class="close" onclick="closeModal('modal-wellfitness')">&times;</span>
@@ -202,7 +208,6 @@
     </ul>
   </div>
 </div>
-
 <div id="modal-watches" class="modal" style="display: none;">
   <div class="modal-content">
     <span class="close" onclick="closeModal('modal-watches')">&times;</span>
@@ -217,13 +222,14 @@
   </div>
 </div>
 
+<!-- Experience section -->
 <section class="timeline-section" id="experience">
   <div class="container">
     <div class="section-title text-center">
       <h2>Work Experience</h2>
       <p>A glimpse into the professional roles and responsibilities I've taken on.</p>
     </div>
-
+    <!-- IT technician intern -->
     <div class="timeline">
       <div class="timeline-item left">
         <div class="timeline-icon"><i class="ph ph-briefcase"></i></div>
@@ -233,7 +239,7 @@
           <p>Supported hardware maintenance, basic troubleshooting, and system testing. Assisted with network setup and documented technical procedures for internal use.</p>
         </div>
       </div>
-
+      <!-- Sales assistant -->
       <div class="timeline-item right">
         <div class="timeline-icon"><i class="ph ph-desktop-tower"></i></div>
         <div class="timeline-content">
@@ -246,6 +252,7 @@
   </div>
 </section>
 
+<!-- Lifestyle section -->
 <section class="lifestyle-hero" id="lifestyle">
   <div class="container">
     <h2>Welcome to My Lifestyle</h2>
@@ -253,38 +260,36 @@
   </div>
 </section>
 
+<!-- Food section -->
 <section class="lifestyle-section food-section" id="lifestyle">
   <div class="container">
     <h3><i class="fas fa-utensils"></i> Food Adventures</h3>
     <div class="grid food-grid">
-
       <div class="card food-card">
         <img src="images/lifestyle/food_1.jpg" alt="Homemade Satay">
         <h4>Homemade Satay</h4>
         <p>Ingredients: chicken, skewers, oil, and marinade. The aroma is truly appetizing!</p>
       </div>
-
       <div class="card food-card">
         <img src="images/lifestyle/food_2.jpg" alt="Cream Puff">
         <h4>Restaurant Review:<br>The Ordinary Baker</h4>
         <p>The cream puffs are delicious! Totally worth it with many exciting flavors.</p>
       </div>
-
       <div class="card food-card">
         <img src="images/lifestyle/food_3.jpg" alt="Spaghetti & Grilled Chicken">
         <h4>Spaghetti & Grilled Chicken</h4>
         <p>Create sweet memories with friends — cook together and enjoy the results!</p>
       </div>
-
     </div>
   </div>
 </section>
 
+<!-- Travel section -->
 <section class="lifestyle-section travel-section" id="lifestyle">
   <div class="container">
   <h3><i class="fas fa-plane-departure"></i> Travel Section</h3>
     <div class="travel-grid">
-
+      <!-- Destinations I have visited -->
       <div class="travel-card">
         <h5 class="card-label">Destinations</h5>
         <div class="carousel" id="destination-carousel">
@@ -297,7 +302,7 @@
         <h4 id="destination-title">Makkah Madinah</h4>
         <p id="destination-desc">A spiritual journey to Makkah and Madinah. Perfect for those seeking peace, reflection, and religious fulfillment.</p>
       </div>
-
+      <!-- Travel tips -->
       <div class="travel-card">
         <h5 class="card-label">Travel Tips</h5>
         <div class="carousel" id="tip-carousel">
@@ -310,7 +315,7 @@
         <h4 id="tip-title">Bring Your Passport</h4>
         <p id="tip-desc">Keep your passport safe and carry it when heading to the airport. Consider using a passport holder for extra protection.</p>
       </div>
-
+      <!-- My travel stories -->
       <div class="travel-card">
         <h5 class="card-label">Stories</h5>
         <div class="carousel" id="exp-carousel">
@@ -324,15 +329,14 @@
         <h4 id="exp-title">Tasting Camel Rice</h4>
         <p id="exp-desc">Enjoyed a unique cultural dish during our local experience – flavorful and memorable! A must-try for food lovers.</p>
       </div>
-
     </div>
   </div>
 </section>
 
+<!-- Work-life balance section -->
 <section class="lifestyle-section balance-section" id="lifestyle">
   <div class="container">
     <h3><i class="fas fa-balance-scale"></i> Work-Life Balance Tips</h3>
-
     <div class="tips-card">
       <ul class="tips-list">
         <li>Set clear boundaries between work and personal time to avoid burnout and maintain a healthy routine.</li>
@@ -347,7 +351,7 @@
 <div class="poll-button-container">
   <button id="showPollBtn" class="btn">Wait! Do you want to join Quick Poll?</button>
 </div>
-
+<!-- Quick poll section -->
 <section class="poll-section" id="pollSection" style="display: none;">
   <button id="closePollBtn" class="btn-close">✕</button>
   <h3>Quick Poll</h3>
@@ -362,61 +366,53 @@
   <div id="pollResult" style="margin-top:10px;"></div>
 </section>
 
+<!-- Gallery section - Several of my memories -->
 <section class="galleries-masonry" id="galleries">
   <div class="container">
     <h2 class="section-title">My Galleries</h2>
     <p class="subtitle">Snapshots of projects, events, and moments.</p>
-
     <div class="masonry-grid">
       <div class="masonry-item tall">
         <img src="images/galleries/sukabumi.jpg" alt="Mobility Program" />
         <h4>Mobility Program - Indonesia</h4>
       </div>
-
       <div class="masonry-item">
         <img src="images/galleries/sukabumi_2.jpg" alt="Javanese Food" />
         <h4>Javanese Food</h4>
       </div>
-
       <div class="masonry-item wide">
         <iframe src="https://youtube.com/embed/QIgruHOl3Oc?si=JH9YIlXaeJkUXdaB" frameborder="0" allowfullscreen></iframe>
         <h4>Makkah Trip</h4>
       </div>
-
       <div class="masonry-item">
         <img src="images/galleries/businesstalk.jpg" alt="Business Talk" />
         <h4>Business Talk Program</h4>
       </div>
-
       <div class="masonry-item">
         <img src="images/galleries/puo.jpg" alt="Residential College" />
         <h4>College Committee</h4>
       </div>
-
       <div class="masonry-item">
         <img src="images/galleries/funrun.jpg" alt="Fun run" />
         <h4>Color of Freedom</h4>
       </div>
-
       <div class="masonry-item">
         <img src="images/galleries/graduate.jpg" alt="Graduate" />
         <h4>Diploma Done!</h4>
       </div>
-
       <div class="masonry-item">
         <img src="images/galleries/sukabumi_1.jpg" alt="SOC" />
         <h4>SOC Hangout</h4>
       </div>
-
       <div class="masonry-item">
         <img src="images/galleries/dekan.jpg" alt="Dekan" />
         <h4>Dekan Ceremony</h4>
       </div>
-
     </div>
   </div>
 </section>
 
+<!-- Contact section -->
 <section class="contact" id="contact">
   <div class="container">
     <h2>Contact Me Here..</h2>
@@ -426,7 +422,6 @@
         <textarea name="message" rows="5" placeholder="Your Message"></textarea>
         <button type="submit" class="btn">Send Message</button>
       </form>
-
       <div id="popupModal" class="popup-modal">
         <div class="popup-content">
         <p>Your message has been sent!</p>
@@ -440,6 +435,7 @@
   <p>&copy; 2025 Syazwani Mz. All rights reserved.</p>
 </footer>
 
+<!-- Call JavaScript for functionality -->
 <script src="js/main.js"></script>
 </body>
 </html>

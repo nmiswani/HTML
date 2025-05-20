@@ -1,9 +1,12 @@
+/* Import google font - Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
+/* Smooth scrolling for the entire page */
 html {
   scroll-behavior: smooth;
 }
 
+/* Reset default styles for all elements */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -13,17 +16,20 @@ html {
   list-style: none;
 }
 
+/* Body background and text color */
 body {
   background-color: #f1e8e8;
   color: #1e1e24;
 }
 
+/* Logo styling */
 .logo {
   color: #1e1e24;
   font-size: 1.2rem;
   font-weight: 600;
 }
 
+/* Fixed header */
 header {
   position: fixed;
   width: 100%;
@@ -38,6 +44,7 @@ header {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* Navigation menu */
 .navmenu {
   display: flex;
   gap: 2rem;
@@ -73,6 +80,7 @@ header {
   cursor: pointer;
 }
 
+/* Mobile responsiveness */
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
@@ -115,6 +123,7 @@ section {
   scroll-margin-top: 50px;
 }
 
+/* Home section */
 .home {
   width: 100%;
   height: 100vh;
@@ -179,6 +188,7 @@ section {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
+/* Social media icons */
 .socials-icons {
   position: absolute;
   top: 40%;
@@ -197,6 +207,7 @@ section {
   transform: rotate3d(0, 0, 1, 90deg);
 }
 
+/* About me section */
 .about-section {
   padding: 0px 80px;
   background-color: #f1e8e8;
@@ -234,6 +245,7 @@ section {
   margin-bottom: 20px;
 }
 
+/* Skills bar */
 .my-skills {
   width: 100%;
 }
@@ -261,6 +273,7 @@ section {
   box-shadow: inset 0 2px 5px rgba(0,0,0,0.1);
 }
 
+/* Skill bars with gradient colors */
 .progress-1 {
   background: linear-gradient(90deg, #F72585, #B5179E);
   height: 100%;
@@ -301,6 +314,7 @@ section {
   line-height: 20px;
 }
 
+/* Projects section */
 .portfolio .section-header {
   margin-bottom: 40px;
   text-align: center;
@@ -424,6 +438,7 @@ section {
   background: #d31f34;
 }
 
+/* Modal for project details */
 .modal {
   position: fixed;
   top: 0;
@@ -494,6 +509,7 @@ section {
   color: #d31f34;
 }
 
+/* Project reflection section */
 .project-reflection {
   margin: 40px auto;
   padding: 20px;
@@ -516,6 +532,7 @@ section {
   margin-bottom: 10px;
 }
 
+/* Lifestyle section */
 .lifestyle-hero {
   background: #f1e8e8;
   text-align: center;
@@ -550,6 +567,7 @@ section {
   justify-content: center;
 }
 
+/* Food cards */
 .food-card {
   background: #fff;
   border: 1px solid #eee;
@@ -582,6 +600,7 @@ section {
   justify-content: center;
 }
 
+/* Travel cards */
 .travel-card {
   background: #fff;
   border: 1px solid #eee;
@@ -632,6 +651,7 @@ section {
   position: relative;
 }
 
+/* Carousel navigation */
 .carousel-btn {
   position: absolute;
   top: 50%;
@@ -652,6 +672,7 @@ section {
   padding: 60px 150px;
 }
 
+/* Balance/tips cards */
 .balance-section h3 {
   text-align: center;
   font-size: 28px;
@@ -694,6 +715,7 @@ section {
   font-weight: bold;
 }
 
+/* Poll section */
 .poll-section {
   position: fixed;
   top: 50%;
@@ -820,6 +842,7 @@ section {
   }
 }
 
+/* Experience section */
 .timeline-section {
   padding: 80px 20px;
   background: #f1e8e8;
@@ -1033,6 +1056,7 @@ section {
   margin-bottom: 40px;
 }
 
+/* Responsive masonry grid */
 .masonry-grid {
   column-count: 4;
   column-gap: 20px;
@@ -1062,6 +1086,7 @@ section {
   text-align: center;
 }
 
+/* Mobile responsiveness */
 @media (max-width: 768px) {
   .masonry-grid {
     column-count: 1;
@@ -1073,6 +1098,8 @@ section {
     column-count: 2;
   }
 }
+
+/* Contact section */
 .contact {
   background-color: #f1e8e8;
   padding: 60px 20px;
@@ -1188,6 +1215,7 @@ section {
   display: none;
 }
 
+/* Footer */
 footer {
   padding: 25px;
   text-align: center;
@@ -1195,6 +1223,7 @@ footer {
   color: white;
 }
 
+/* Mobile responsiveness */
 @media (max-width: 768px) {
   header {
     padding: 1rem 2rem;
