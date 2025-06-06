@@ -14,7 +14,7 @@ function showModal() {
 }
 
 // Close modal and reset form
-function closeModal() {
+function closeContactModal() {
   document.getElementById("popupModal").style.display = "none";
   document.getElementById("contactForm").reset();
 }

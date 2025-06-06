@@ -38,7 +38,7 @@
 
 <!-- Home section -->
 <section class="home" id="home">
-  <div class="home-text">
+  <div class="home-text"><p></p>
     <h2>Hi, I'm Syazwani</h2>
     <h3>Software Engineering Student</h3>
     <p>Welcome to my e-portfolio! I am passionate about web & mobile development, and always open to learning new tech that solves real problems.</p>
@@ -306,14 +306,14 @@
       <div class="travel-card">
         <h5 class="card-label">Travel Tips</h5>
         <div class="carousel" id="tip-carousel">
-          <img class="carousel-img" src="images/lifestyle/passport.jpg" alt="Bring Passport">
-          <img class="carousel-img active" src="images/lifestyle/weather.jpg" alt="Pack Accordingly">
+          <img class="carousel-img active" src="images/lifestyle/passport.jpg" alt="Bring Passport">
+          <img class="carousel-img" src="images/lifestyle/weather.jpg" alt="Pack Accordingly">
           <img class="carousel-img" src="images/lifestyle/flightmeal.jpg" alt="Eat on Plane">
           <button class="carousel-btn left" onclick="changeSlide('tip', -1)">&#10094;</button>
           <button class="carousel-btn right" onclick="changeSlide('tip', 1)">&#10095;</button>
         </div>
         <h4 id="tip-title">Bring Your Passport</h4>
-        <p id="tip-desc">Keep your passport safe and carry it when heading to the airport. Consider using a passport holder for extra protection.</p>
+        <p id="tip-desc">Keep your passport safe and carry it when heading to the airport. Consider using holder for extra protection.</p>
       </div>
       <!-- My travel stories -->
       <div class="travel-card">
@@ -417,15 +417,15 @@
   <div class="container">
     <h2>Contact Me Here..</h2>
       <form id="contactForm" onsubmit="return showModal()">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="text" name="name" placeholder="Your Name" required/>
+        <input type="email" name="email" placeholder="Your Email" required/>
         <textarea name="message" rows="5" placeholder="Your Message"></textarea>
         <button type="submit" class="btn">Send Message</button>
       </form>
       <div id="popupModal" class="popup-modal">
         <div class="popup-content">
         <p>Your message has been sent!</p>
-        <button onclick="closeModal()">OK</button>
+        <button onclick="closeContactModal()">OK</button>
       </div>
     </div>
   </div>
